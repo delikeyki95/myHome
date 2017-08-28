@@ -29,11 +29,9 @@
   </thead>
   <tbody>
     <?php
-    while ($row = mysqli_fetch_assoc($result)){
-     echo '<tr>';
-     echo '<td>'.$row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['email'].'</td><td>'.$row['title'].'</td><td>'.$row['description'].'</td><td>'.$row['date'].'</td>';
-     echo '</tr>';
-    }
+      while ($row = mysqli_fetch_assoc($result)){
+       echo '<tr><td>'.$row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['email'].'</td><td>'.$row['title'].'</td><td>'.$row['description'].'</td><td>'.$row['date'].'</td></tr>';
+      }
     ?>
   </tbody>
 </table>

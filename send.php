@@ -9,4 +9,5 @@
   // DB 행 추가
 
   header('Location:http://delikeyki.dothome.co.kr/index.php');  // Redirection 기능
+  //,"set names utf8"
 ?>
