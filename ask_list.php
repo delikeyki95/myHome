@@ -4,7 +4,7 @@
   $conn = mysqli_connect('localhost','delikeyki','ahdtlf95!');
   mysqli_select_db($conn,'delikeyki');
 
-  $sql = "SELECT * FROM ASK";
+  $sql = "SELECT * FROM contact";
   $result = mysqli_query($conn, $sql) or die(mysqli_error($conn));
   //$row = mysqli_fetch_row($result);
 ?>
@@ -30,7 +30,7 @@
   <tbody>
     <?php
       while ($row = mysqli_fetch_assoc($result)){
-       echo '<tr><td>'.$row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['email'].'</td><td>'.$row['title'].'</td><td>'.$row['description'].'</td><td>'.$row['date'].'</td></tr>';
+       echo '<tr><td>'.$row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['phone'].'</td><td>'.$row['email'].'</td><td>'.$row['message'].'</td><td>'.$row['date'].'</td></tr>';
       }
     ?>
   </tbody>

@@ -3,11 +3,11 @@
   $conn = mysqli_connect('localhost','delikeyki','ahdtlf95!');
   mysqli_select_db($conn,'delikeyki');
 
-  $sql = "INSERT INTO ASK(name,email,title,description) VALUES('".$_POST['ip_name']."','".$_POST['ip_email']."','".$_POST['ip_title']."','".$_POST['ip_message']."')";
+  $sql = "INSERT INTO contact(name,phone,email,message) VALUES('".$_POST['name']."','".$_POST['phone']."','".$_POST['email']."','".$_POST['message']."')";
   //echo $sql;
   $result = mysqli_query($conn, $sql);
   // DB 행 추가
 
-  header('Location:http://delikeyki.dothome.co.kr/index.php');  // Redirection 기능
+  header('Location:http://delikeyki.dothome.co.kr/index.html');  // Redirection 기능
   //,"set names utf8"
 ?>
