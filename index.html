@@ -469,7 +469,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form action="send.php" method="POST" id="contactForm" name="sentMessage" novalidate>
+            <form action="https://script.google.com/macros/s/AKfycbxob2cmGmnrvwuVCsYR0PQYx8Ip592HxPNhKL7e/exec" method="POST" id="gform" name="sentMessage" novalidate>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -511,7 +511,7 @@
             <!-- <address>
               <a href="mailto:delikeyki@naver.com"><i class="fa fa-envelope"></i> delikeyki@naver.com</a>
             </address> -->
-            <span class="copyright">Copyright &copy; Keyki Studio 2018</span>
+            <span class="copyright">Copyright &copy; Keyki Studio <span id="thisYear"></span></span>
           </div>
           <!--
           <div class="col-md-4">
@@ -602,7 +602,7 @@
                   <!-- Project Details Go Here -->
                   <h2>Alidok 알리독</h2>
                   <p class="item-intro text-muted">Chemical Hazard Identification System</p>
-                  <a href="http://delikeyki.dothome.co.kr/work/alidok/index.html" target="_blank"><strong>URL : </strong> /work/alidok/</a>
+                  <a href="http://delikeyki.dothome.co.kr/my/work/alidok/index.html" target="_blank"><strong>URL : </strong> /work/alidok/</a>
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/alidok01.jpg" alt="">
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/alidok02.jpg" alt="">
                   <p>Chemical Hazard Identification System</p>
@@ -639,7 +639,7 @@
                   <!-- Project Details Go Here -->
                   <h2>SnaPeaks</h2>
                   <p class="item-intro text-muted">Mass Spectrometry Platform for Natural Product Analysis</p>
-                  <a href="http://delikeyki.dothome.co.kr/work/snapeaks/en/index.html" target="_blank"><strong>URL : </strong> /work/snapeaks/</a>
+                  <a href="https://snapeaks.com/" target="_blank"><strong>URL : </strong> https://snapeaks.com/</a>
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/snapeaks01.jpg" alt="">
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/snapeaks02.jpg" alt="">
                   <p>Mass Spectrometry Platform for Natural Product Analysis</p>
@@ -676,7 +676,7 @@
                   <!-- Project Details Go Here -->
                   <h2>ChemTopia Mobile</h2>
                   <p class="item-intro text-muted">Chemistry Information Community Mobile Version</p>
-                  <a href="http://delikeyki.dothome.co.kr/work/mchemtopia/src/index.html" target="_blank"><strong>URL : </strong> /work/mchemtopia/</a>
+                  <a href="http://delikeyki.dothome.co.kr/my/work/mchemtopia/index.html" target="_blank"><strong>URL : </strong> /work/mchemtopia/</a>
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/mchemtopia01.jpg" alt="">
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/mchemtopia02.jpg" alt="">
                   <p>Community site mobile version for chemical information data</p>
@@ -746,8 +746,8 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2>Molinstincts SEO</h2>
-                  <p class="item-intro text-muted">Chemical molecular database SEO pages</p>
-                  <a href="https://www.molinstincts.com/chemical-structure/ethanol-cstr-CT1001214542.html" target="_blank"><strong>URL : </strong> https://www.molinstincts.com/chemical-structure/ethanol-cstr-CT1001214542.html</a>
+                  <p class="item-intro text-muted">Chemical database website</p>
+                  <a href="https://www.molinstincts.com/" target="_blank"><strong>URL : </strong> https://www.molinstincts.com</a>
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/molSEO01.jpg" alt="">
                   <p>Information site for chemical molecules. I have been working on the Google SEO guide.</p>
                   <ul class="list-inline">
@@ -819,10 +819,10 @@
                   <!-- Project Details Go Here -->
                   <h2>Pantech Company Site</h2>
                   <p class="item-intro text-muted">Pantech Company Promotion Site</p>
-                  <a href="http://www.pantech.co.kr/" target="_blank"><strong>URL : </strong> http://www.pantech.co.kr/</a>
+                  <a href="http://delikeyki.dothome.co.kr/my/work/pantech/layout_main.html" target="_blank"><strong>URL : </strong> /work/pantech/</a>
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/pantech01.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/work/big-image/pantech02.jpg" alt="">
-                  <a href="http://m.pantech.co.kr/index.do" target="_blank"><strong>URL : </strong> http://m.pantech.co.kr/index.do</a>
+                  <!--<img class="img-fluid d-block mx-auto" src="img/work/big-image/pantech02.jpg" alt="">-->
+                  <a href="http://delikeyki.dothome.co.kr/my/work/pantech/mobile/layout_main.html" target="_blank"><strong>URL : </strong> /work/pantech/mobile/</a>
                   <img class="img-fluid d-block mx-auto" src="img/work/big-image/pantech03.jpg" alt="">
                   <p>This is the work of Renewing the Pantech Company site</p>
                   <ul class="list-inline">
@@ -891,6 +891,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <script>
+        var today = new Date();
+        let year = today.getFullYear();
+        $('#thisYear').html(year);
+    </script>
 
   </body>
 

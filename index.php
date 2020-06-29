@@ -276,14 +276,14 @@
 						<label for="name">name*</label>
 						<input type="text" name="ip_name" placeholder="NAME">
 					</div>
+          <div class="rq_box">
+            <label for="email">phone*</label>
+            <input type="text" name="ip_phone" placeholder="title">
+          </div>
 					<div class="rq_box">
 						<label for="email">e-mail*</label>
 						<input type="text" name="ip_email" placeholder="E-MAIL">
 					</div>
-          <div class="rq_box">
-            <label for="email">title*</label>
-            <input type="text" name="ip_title" placeholder="title">
-          </div>
 					<div class="rq_box">
 						<label for="message">message*</label>
 						<textarea name="ip_message" placeholder="MESSAGE" rows="5"></textarea>
