@@ -24,6 +24,32 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
+    <style>
+      #study .study-item {
+          position: relative;
+          display: block;
+          max-width: 300px;
+          height: 80px;
+          overflow: hidden;
+          margin: 0 auto;
+          padding:10px;
+          cursor: pointer;
+          border:2px dotted #ddd;
+          border-radius:6px;
+          text-align:center;
+      }
+
+      #study .study-item:hover {
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        background: hwb(58 64% 2% / 0.816);
+      }
+
+      #study .study-item:hover .portfolio-link {
+        text-decoration:none;
+      }
+    </style>
     <link rel="SHORTCUT ICON" href="favicon2.ico">
   </head>
 
@@ -41,6 +67,9 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#study">Study</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -105,6 +134,36 @@
             <h4 class="service-heading">Web Accessibility</h4>
             <p class="text-muted">When sites are correctly designed, developed and edited, all users have equal access to information and functionality.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Study Grid -->
+    <section class="bg-light" id="study">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Study</h2>
+            <h3 class="section-subheading text-muted">Javascript, Vue3</h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 study-item">
+              <a class="portfolio-link" target="_blank" href="https://delikeyki95.github.io/shooting/">
+                <div class="portfolio-caption">
+                  <h5>슈팅게임</h5>
+                  <p class="text-muted">Javascript</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 study-item">
+              <a class="portfolio-link" target="_blank" href="https://delikeyki95.github.io/budonsan/dist/index.html">
+                <div class="portfolio-caption">
+                  <h5>원룸 매물 리스트</h5>
+                  <p class="text-muted">Vue3</p>
+                </div>
+              </a>
+            </div>
         </div>
       </div>
     </section>
